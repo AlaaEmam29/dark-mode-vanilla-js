@@ -1,0 +1,103 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-grey: #64748b;
+}
+
+.dark-theme {
+--clr-bcg: #282c35;
+--clr-font: #fff;
+--clr-primary: #ffa7c4;
+--clr-grey: #cbd5e1;
+}
+.toggle-btn
+{
+  position: relative;
+  outline: none;
+
+    border:2px solid var(--clr-primary);
+    border-radius: 10px;
+    width: 5rem;
+  height: 2rem;
+}
+i{
+    color:black;
+    font-size: 1.2rem;
+}
+nav h3
+
+{
+  font-size: 40px;
+  letter-spacing:0.25rem;
+}
+.ball {
+    background-color: var(--clr-primary);
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    border-radius: 50%;
+    cursor: pointer;
+   
+  }
+  .slide .ball {
+    left: 60%;
+    transition: width 0.5ms ease-in-out;
+  }
+ 
+  .nav-toggle
+  {
+    width:35%;
+
+  }
+  h2
+  {
+    color: var(--clr-primary)
+  }
+  span
+  {
+    color: var(--clr-grey)
+  }
+  h3,p
+  {
+color: var(--clr-font);
+  }
+ body
+ {
+   background-color: var(--clr-bcg);
+ }
+
+@media screen and  (max-width :991.98px)
+{
+  .nav-toggle
+  {
+    width:100%;
+
+  }
+  .items
+  {
+width: 95% !important;
+  }
+}
+@media screen and (min-width :992px) and (max-width :1199.98px)
+{
+  .nav-toggle
+  {
+    width:50%;
+
+  }
+  .items
+  {
+    width: 65% !important;
+
+  }
+}
